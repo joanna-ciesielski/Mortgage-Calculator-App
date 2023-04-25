@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="LoanAmount">Loan Amount</string>
+    <string name="zero">0.0</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="purchasePriceTotal">Purchase Price</string>
+    <string name="loanDuration">Loan Duration</string>
+    <string name="monthlyPayment">Monthly Payment</string>
+</resources>

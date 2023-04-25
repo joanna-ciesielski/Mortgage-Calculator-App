@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- main.xml -->
+<!-- Mortgage Calculator's XML Layout -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFF" android:id="@+id/tableLayout"
+    android:stretchColumns="1,2,3" android:padding="7dp">
+
+    <!-- tableRow0 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow0">
+        <TextView android:id="@+id/purchasePriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/purchasePriceTotal" android:textColor="#000"
+            android:gravity="right" android:paddingRight="5dp"></TextView>
+        <EditText android:layout_width="wrap_content"
+            android:id="@+id/purchasePriceEditText"
+            android:layout_height="wrap_content" android:layout_span="3"
+            android:inputType="numberDecimal" android:layout_weight="1">
+        </EditText>
+    </TableRow>
+
+    <!-- tableRow1 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow1">
+        <TextView android:id="@+id/downPaymentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/down_payment" android:textColor="#000"
+            android:gravity="right" android:paddingRight="5dp"></TextView>
+        <EditText android:layout_width="wrap_content"
+            android:id="@+id/downPaymentEditText"
+            android:layout_height="wrap_content" android:layout_span="3"
+            android:inputType="numberDecimal" android:layout_weight="1">
+        </EditText>
+    </TableRow>
+
+    <!-- tableRow2 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow2" >
+        <TextView android:id="@+id/interestRateEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_rate" android:textColor="#000"
+            android:gravity="right" android:paddingRight="5dp"></TextView>
+        <EditText android:layout_width="wrap_content"
+            android:id="@+id/interestEditText"
+            android:layout_height="wrap_content" android:layout_span="3"
+            android:inputType="numberDecimal" android:layout_weight="1">
+        </EditText>
+    </TableRow>
+
+
+    <!-- tableRow3 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow3">
+        <TextView android:id="@+id/tenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="10 Years"
+            android:textColor="#000" android:layout_column="1"
+            android:gravity="center" android:layout_weight="1"
+            android:paddingBottom="20dp"
+            android:paddingTop="30dp"></TextView>
+        <TextView android:id="@+id/fifteenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="20 Years"
+            android:textColor="#000" android:gravity="center"
+            android:layout_weight="1"></TextView>
+        <TextView android:id="@+id/twentyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="30 Years"
+            android:textColor="#000" android:gravity="center"
+            android:layout_weight="1"></TextView>
+    </TableRow>
+
+
+
+
+    <!-- tableRow4 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow5">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monthlyPaymentTextView" android:text="@string/monthly_payment"
+            android:textColor="#000" android:gravity="right"
+            android:paddingRight="5dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="30dp"></TextView>
+        <EditText android:layout_width="wrap_content"
+            android:text="@string/zero" android:layout_height="wrap_content"
+            android:id="@+id/tenYearEditText" android:gravity="center"
+            android:focusable="false" android:layout_weight="1"
+            android:textSize="14sp" android:cursorVisible="false"
+            android:longClickable="false"></EditText>
+        <EditText android:layout_width="wrap_content"
+            android:text="@string/zero" android:layout_height="wrap_content"
+            android:id="@+id/twentyYearEditText" android:gravity="center"
+            android:focusable="false" android:layout_weight="1"
+            android:textSize="14sp" android:cursorVisible="false"
+            android:longClickable="false"></EditText>
+        <EditText android:layout_width="wrap_content"
+            android:text="@string/zero" android:layout_height="wrap_content"
+            android:id="@+id/thirtyYearEditText" android:gravity="center"
+            android:focusable="false" android:layout_weight="1"
+            android:textSize="14sp" android:cursorVisible="false"
+            android:longClickable="false"></EditText>
+    </TableRow>
+
+    <!-- tableRow5 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow4">
+        <TextView android:id="@+id/loanAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LoanAmount" android:textColor="#000"
+            android:gravity="right" android:paddingRight="5dp"></TextView>
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/loanAmountEditText" android:text="@string/zero"
+            android:gravity="center" android:focusable="false"
+            android:layout_weight="1" android:textSize="14sp"
+            android:cursorVisible="false" android:longClickable="false">
+        </EditText>
+    </TableRow>
+    <!-- tableRow6 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow6">
+        <TextView android:id="@+id/loanDurationTextView"
+            android:layout_width="wrap_content" android:text="@string/loanDuration"
+            android:textColor="#000" android:paddingRight="5dp"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:focusable="false"></TextView>
+
+        <SeekBar
+            android:id="@+id/customSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="30dp"
+            android:progress="20"></SeekBar>
+
+        <TextView android:id="@+id/customDurationTextView"
+            android:layout_width="wrap_content" android:text="20 Years"
+            android:textColor="#000" android:gravity="center_vertical"
+            android:layout_height="match_parent" android:paddingLeft="5dp"
+            android:paddingBottom="5dp" android:focusable="false"
+            android:layout_weight="1"></TextView>
+    </TableRow>
+
+
+
+
+    <!-- tableRow7 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow7">
+
+        <TextView android:id="@+id/monthlyCustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/monthlyPayment"
+            android:textColor="#000" android:gravity="left"
+            android:paddingRight="5dp" android:layout_weight="1"></TextView>
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/customYearEditText" android:text="@string/zero"
+            android:gravity="center" android:focusable="false"
+            android:layout_weight="1" android:textSize="14sp"
+            android:cursorVisible="false" android:longClickable="false">
+        </EditText>
+    </TableRow>
+</TableLayout>
+
